@@ -1,0 +1,80 @@
+body{margin:0; padding:0;}
+.wowtitleMod {font-family:Arial;font-size:14px;font-weight:bold;color:#3333FF;text-decoration:none;}
+.wowwhtTitleMod, .wowwhiteTitleMod:link, .wowwhiteTitleMod:visited {font-family:Arial;font-size:14px;font-weight:bold;color:#FFFFFF;text-decoration:none;}
+.wowwhtTitleMod:hover {font-weight:bold;color:#FFFFFF;text-decoration:none;}
+.wowtitleModSm {font-family:Arial;font-size:11px;font-weight:bold;color:#3333FF;text-decoration:none;}
+.wowwhtTitleModSm, .wowwhiteTitleModSm:link, .wowwhiteTitleModSm:visited {font-family:Arial;font-size:11px;font-weight:bold;color:#FFFFFF;text-decoration:underline;}
+.wowwhtTitleModSm:hover {font-weight:bold;color:#FFFFFF;text-decoration:none;}
+.wowwhtSearch {font-family:Arial;font-size:12px;font-weight:bold;color:#FFFFFF;text-decoration:none;}
+.wowwxPhrase {font-family:Arial;font-size:11px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowwxOutlook {font-family:Arial;font-size:10px;font-weight:bold;color:#333333;text-decoration:none;}
+.wowwxPhraseSm {font-family:Arial;font-size:10px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowcontentText {font-family:Arial;font-size:11px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowsevWxText, .wowsevWxText:link, .wowsevWxText:visited {font-family:Arial;font-size:11px;font-weight:normal;color:#CC0000;text-decoration:underline;}
+.wowsevWxText:hover {font-family:Arial;font-size:11px;font-weight:normal;color:#000000;text-decoration:none;}
+.wowwxPhraseLg {font-family:Arial;font-size:12px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowaText {font-family:Arial;font-size:12px;font-weight:bold;color:#666666;text-decoration:none;}
+.wowwxTemp {font-family:Arial;font-size:24px;font-weight:bold;color:#333333;text-decoration:none;}
+.wowhiTemp {font-family:Arial;font-size:16px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowhiTempSev {font-family:Arial;font-size:14px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowloTemp {font-family:Arial;font-size:14px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowloTempSev {font-family:Arial;font-size:12px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowwxTempSm {font-family:Arial;font-size:22px;font-weight:bold;color:#333333;text-decoration:none;}
+.wowwxTempLg {font-family:Arial;font-size:24px;font-weight:bold;color:#333333;text-decoration:none;}
+.wowwxSmall {font-family:Arial;font-size:20px;font-weight:bold;color:#333333;text-decoration:none;}
+.wowtempText {font-family:Arial;font-size:18px;font-weight:bold;color:#333333;text-decoration:none;}
+.wowwxFade {font-family:Arial;font-size:10px;font-weight:normal;color:#333333;text-decoration:none;}
+.wowzipText {font-family:Arial;font-size:11px;font-weight:normal;color:#666666;text-decoration:none;}
+.wowzipTextSm {font-family:Arial;font-size:10px;font-weight:normal;color:#666666;text-decoration:none;}
+.wowwxLinkB, .wowwxLinkB:link, .wowwxLinkB:visited{font-family:Arial;font-weight:normal;font-size:10px;color:#3333FF;}
+.wowwxLinkB:hover {font-family:Arial;font-weight:normal;font-size:10px;color:#3333FF;}
+.wowwxLink10,.wowwxLink10:link, .wowwxLink10:visited{font-family:Arial;font-size:10px;color:#3333FF;}
+.wowwxLink11, .wowwxLink11:link, .wowwxLink11:visited{font-family:Arial;font-size:11px;color:#3333FF;}
+.wowwxLink12, .wowwxLink12:link, .wowwxLink12:visited{font-family:Arial;font-size:12px;color:#3333FF;}
+.wowwhtLink10,  .wowwhtLink10:link,  .wowwhtLink10:visited {font-family:Verdana;font-size:10px;font-weight:bold;color:#FFFFFF;text-decoration:underline;}
+.wowwhtLink10:hover {font-family:Verdana;font-size:10px;font-weight:bold;color:#FFFFFF;text-decoration:none;}
+.wowwhtTitleLink, .wowwhtTitleLink:link, .wowwhtTitleLink:visited {font-family:Arial;font-size:11px;font-weight:bold;color:#FFFFFF;text-decoration:underline;}
+.wowwhtTitleLink:hover {font-family:Arial;font-size:11px;font-weight:bold;color:#FFFFFF;text-decoration:none;}
+.wowtitleMod {font-family:Arial;font-size:14px;font-weight:bold;color:#3333FF;text-decoration:none;}
+.wowerrorText {font-family:Arial;font-size:20px;font-weight:bold;color:#666666;text-decoration:none;}
+.wowerrorTextLink {font-family:Arial;font-size:20px;font-weight:bold;color:#3333FF;text-decoration:underline;}
+.wowtagLine {font-family:Arial;font-size:14px;font-weight:normal;color:#003399;text-decoration:none;}
+.wowtagLineXS {font-family:Arial;font-size:10px;font-weight:normal;color:#003399;text-decoration:none;}
+.wowtagLineSm {font-family:Arial;font-size:12px;font-weight:normal;color:#003399;text-decoration:none;}
+.wowtagLineLg {font-family:Arial;font-size:28px;font-weight:normal;color:#003399;text-decoration:none;}
+.wowcustomText {font-family:Arial;font-size:14px;font-weight:bold;color:#003300;text-decoration:none;}
+.wowheaderField {font-family:Arial;font-size:12px;font-weight:bold;color:#003300;text-decoration:none;}
+.wowboxText {font-family:Arial;font-size:14px;font-weight:normal;color:#666666;text-decoration:none;}
+.wowerrorBoxText {font-family:Arial;font-size:16px;font-weight:bold;color:#666666;text-decoration:none;}
+.wowwhtErrorText {font-family:Arial;font-size:14px;font-weight:bold;color:#FFFFFF;text-decoration:none;}
+table {border-spacing:0; text-align:left;}
+#wowoverlay{position: static;top: auto;left: auto;z-index: auto;width: auto;height: auto;background-color:transparent;}
+.wowpromolink,.wowpromolink:link, .wowpromolink:visited{font-family:Arial;font-size:12px;color:#3333FF;}
+
+/* New Wow Module 555 X 130 Css  - Jhairston */
+#moduleContainer555X130 {background-image:url(http://i.imwx.com/web/common/backgrounds/wow555x130bg.gif
+);width:555px;height:130px;font-family:Arial, Helvetica, sans-serif;margin:0px;}
+
+#wxModule6466Title {padding:5px 0px 0px 9px;line-height:17px;}
+#wxModule6466Title a {font-size:12px; font-weight:bold; color:#3333ff;text-decoration:none !important;}
+#wxModule6466Title a:hover {text-decoration:underline !important;}
+#wxModule6466Title #severeWarning a {font-size:11px;color:#cc0000;padding:0px;margin:0px;padding-left:15px;line-height:0px;text-decoration:none;}
+#wxModule6466Title #severeWarning .Expl {color:#FFFFFF;background-color:#cc0000;margin-right:4px;}
+#wxModule6466Title #severeWarning .Expl b {margin:0px 6px 0px 6px;}
+#wxModule6466Title #severeWarning a:hover {text-decoration:underline;}
+
+#moduleContainer555X130 .wxModuleContent {float:left;margin:4px 0px 0px 7px;}
+
+#moduleContainer555X130 .wxModuleContent .weatherDetails {width:76px;height:90px;float:left;text-align:center;}
+#moduleContainer555X130 .wxModuleContent .weatherDetails  p {font-size:11px; color:#ffffff;margin:0px;}
+#moduleContainer555X130 .wxModuleContent .weatherDetails  a {text-decoration:none}
+#moduleContainer555X130 .wxModuleContent .weatherDetails img {margin-top:2px;}
+#moduleContainer555X130 .wxModuleContent .weatherDetails .weatherNum {margin:0px;font-size:11px;color:#555555;}
+#moduleContainer555X130 .wxModuleContent .weatherDetails .weatherText {font-size:9px;color:#555555;margin:0px;}
+
+#wxModule6466contentRight {float:left;margin: 10px 0px 0px 20px;}
+#wxModule6466contentRight .textContainer a {font-size:12px; font-weight:bold; color:#3333ff;text-decoration:none;}
+#wxModule6466contentRight .textContainer a:hover {text-decoration:underline;}
+
+#wxModule6466contentRight a {text-decoration:none !important;}
+#wxModule6466contentRight a:hover {text-decoration:underline !important;}

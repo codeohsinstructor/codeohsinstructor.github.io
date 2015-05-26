@@ -1,0 +1,110 @@
+
+
+
+
+
+
+function addEvent(objObject, strEventName, fnHandler) {
+       if (objObject.addEventListener)
+       		objObject.addEventListener(strEventName, fnHandler, false);
+       else if (objObject.attachEvent)
+       		objObject.attachEvent("on" + strEventName, fnHandler);
+}
+
+var divId;
+var targetDiv;
+var iframeId;
+var iframeWidth;
+var iframeHeight;
+var iFrameHTML;
+
+function createIframe () {
+	var iframe;
+	if (document.createElement && (iframe = document.createElement('iframe'))) {
+		iframe.name = iframe.id = iframeId;
+		iframe.frameBorder = '0';
+		iframe.width = iframeWidth;
+		iframe.height = iframeHeight;
+		iframe.scrolling = 'no';		
+		iframe.src = 'http://wow.weather.com/weather/wow/rebuildmodule/91762?config=SZ=180x150*WX=FHW*LNK=SSNL*UNT=F*BGI=clouds*MAP=null|null*DN=cjuhsd-ca.schoolloop.com*TIER=0*PID=1274441681*MD5=354718bdcaed709f0a6e8d92e136c7c2&proto=http:&target=wx_module_29';
+		var divElement = document.getElementById(divId);
+		while(divElement.childNodes.length >= 1) {
+			divElement.removeChild(divElement.firstChild);
+		}		
+		divElement.appendChild(iframe);
+	}
+ 	return true;
+}
+
+
+// Note - this function is ONLY run by IE browser.
+function initIE() {
+       var loadingDiv = document.createElement('div');
+       loadingDiv.innerHTML = '<table style="width: 100%; height: 100%; background-color: #fafafa;"><tr valign="middle"><td align="center"><h3>Loading...</h3></td></tr></table>';
+       targetDiv = document.getElementById(divId);
+       targetDiv.innerHTML = '';
+       targetDiv.appendChild(loadingDiv);
+
+	   // now start the time/out iterations 
+       wxDivLoadPulse();       
+}
+
+
+// timeout logic variables
+var wx_timeoutID = 0;
+var wx_currentTimeout = 10, wx_wait = 0; wx_maxWait = 6000;
+
+// this logic iteratively check's for the WOW div availability until timeout or cancelled
+// the goal here is to wach the page load, and render the WOWs module as soon as the
+// WOWs div appears on the page.  The change is applied part of BZ 7171, replacing 
+// the prior logic of waiting for entire page to be reloaded. And the users were
+// clearly seeing the "Loading..." message because of latency caused by either
+// WOWs users web site page, or because of of the end users low bandwidth. 
+//
+// Note - this function is ONLY run by IE browser.
+
+function wxDivLoadPulse() {
+	if(!updateWxWOWDIV() && (wx_wait < wx_maxWait)) {		
+		wx_wait += wx_currentTimeout;
+		wx_timeoutID = setTimeout('wxDivLoadPulse()', wx_currentTimeout);
+		wx_currentTimeout = wx_currentTimeout * 2;
+	} else {
+		wx_timeoutID = 0;
+	}
+}
+
+		
+// cancels the pulse (if it's still going) and triggers the final update	
+// Note - this function is ONLY run by IE browser.
+function updateWxWOWDIV()
+{	       
+
+  if (wx_timeoutID != 0) clearTimeout(wx_timeoutID);
+  //alert("divID = " + divId + " newDiv innerhtml =  " + newDiv.innerHTML);
+  // if the wxWOW DIV ID loaded on the page assign the wow html to it
+
+  if(  document.getElementById(divId)  )
+  {
+	createIframe();                      
+    return true;
+  }
+  else
+  	return false;
+}
+ 
+// Note - this function is ONLY run by IE browser.
+function init(myiframeId,mydivId,width,height) {
+ 	divId = mydivId;
+ 	iframeId = myiframeId;
+ 	iframeWidth = width;
+ 	iframeHeight = height;
+    // if IE browser start a loading time lapse presentation
+    // until the WOW div is available on the page
+    if (document.all) {
+        initIE();
+    } else {
+		createIframe();
+    }
+}
+
+init('wowcontainer','wx_module_29',180,150); 
